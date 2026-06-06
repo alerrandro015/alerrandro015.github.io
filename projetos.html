@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Projetos de Alerrandro - Linux, Seguranca, Hardware e Desenvolvimento.">
+  <meta name="author" content="Alerrandro">
+  <meta name="theme-color" content="#050505">
+  <title>Projetos | Alerrandro</title>
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' fill='%23050505'/><text y='24' x='4' font-size='22' fill='%2300ff41' font-family='monospace'>_</text></svg>">
+</head>
+<body>
+  <canvas id="matrix-canvas"></canvas>
+  <div id="site-nav"></div>
+  <div id="site-hud"></div>
+
+  <div class="site-wrapper">
+
+    <div class="page-hero">
+      <div class="container">
+        <div class="page-hero-label animate-in">$ ls -la ~/projects/</div>
+        <h1 class="page-hero-title animate-in delay-1">
+          <span class="accent">Projetos</span> &amp; Repositorios
+        </h1>
+        <p class="page-hero-desc animate-in delay-2">
+          Colecao de projetos pessoais e experimentos tecnicos. Ferramentas, scripts, firmware e estudos praticos em diversas areas da tecnologia.
+        </p>
+      </div>
+    </div>
+
+    <section class="section-padding">
+      <div class="container">
+
+        <div style="display:flex;align-items:center;gap:16px;margin-bottom:36px;flex-wrap:wrap;" class="animate-in">
+          <div style="font-family:var(--font-mono);font-size:0.7rem;color:var(--text-muted);letter-spacing:0.08em;">
+            Legenda:
+          </div>
+          <div style="display:flex;gap:12px;flex-wrap:wrap;">
+            <span class="project-status status-active" style="font-family:var(--font-mono);font-size:0.6rem;letter-spacing:0.12em;padding:3px 10px;border:1px solid;">Ativo</span>
+            <span class="project-status status-wip" style="font-family:var(--font-mono);font-size:0.6rem;letter-spacing:0.12em;padding:3px 10px;border:1px solid;">Em desenvolvimento</span>
+            <span class="project-status status-archived" style="font-family:var(--font-mono);font-size:0.6rem;letter-spacing:0.12em;padding:3px 10px;border:1px solid;">Arquivado</span>
+          </div>
+        </div>
+
+        <div class="projects-grid" id="projects-container"></div>
+
+        <div style="margin-top:60px;border:1px solid var(--border-green);padding:32px;background:var(--bg-card);text-align:center;" class="animate-in">
+          <div style="font-family:var(--font-mono);font-size:0.7rem;color:var(--text-muted);margin-bottom:16px;letter-spacing:0.08em;">
+            // Todos os projetos e codigo-fonte disponivel no GitHub
+          </div>
+          <a href="https://github.com/alerrandro" target="_blank" rel="noopener" class="btn btn-primary">
+            Ver GitHub completo
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+  </div>
+
+  <div id="site-footer"></div>
+
+  <script src="assets/js/components.js"></script>
+  <script src="assets/js/matrix.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/projects.js"></script>
+</body>
+</html>

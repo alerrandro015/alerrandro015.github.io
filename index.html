@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Blog pessoal de Alerrandro - Linux, Seguranca, Hardware, Desenvolvimento e tecnologia.">
+  <meta name="author" content="Alerrandro">
+  <meta name="theme-color" content="#050505">
+  <title>Alerrandro | Terminal Pessoal</title>
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' fill='%23050505'/><text y='24' x='4' font-size='22' fill='%2300ff41' font-family='monospace'>_</text></svg>">
+</head>
+<body>
+  <canvas id="matrix-canvas"></canvas>
+
+  <div id="site-nav"></div>
+  <div id="site-hud"></div>
+
+  <div class="site-wrapper">
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-inner">
+        <div class="hero-content">
+          <div class="hero-label animate-in">Sistema Online</div>
+          <h1 class="hero-name animate-in delay-1">
+            ALE<span class="accent">RRANDRO</span>
+          </h1>
+          <div class="hero-role animate-in delay-2">
+            <span id="typing-text"></span><span class="cursor"></span>
+          </div>
+          <p class="hero-bio animate-in delay-3">
+            Desenvolvedor apaixonado por Linux, seguranca da informacao, hardware e sistemas embarcados.
+            Aqui documento experimentos, estudos e projetos que moldam meu aprendizado tecnico continuo.
+          </p>
+          <div class="hero-actions animate-in delay-4">
+            <a href="blog.html" class="btn btn-primary">Ver Blog</a>
+            <a href="projetos.html" class="btn btn-secondary">Projetos</a>
+            <a href="sobre.html" class="btn btn-ghost">Sobre mim</a>
+          </div>
+          <div class="hero-stats animate-in delay-5">
+            <div class="hero-stat">
+              <div class="hero-stat-num">6+</div>
+              <div class="hero-stat-label">Projetos</div>
+            </div>
+            <div class="hero-stat">
+              <div class="hero-stat-num">12+</div>
+              <div class="hero-stat-label">Artigos</div>
+            </div>
+            <div class="hero-stat">
+              <div class="hero-stat-num">5+</div>
+              <div class="hero-stat-label">Anos de estudo</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual animate-in delay-2">
+          <div class="hero-terminal">
+            <div class="terminal-bar">
+              <div class="terminal-dots">
+                <div class="terminal-dot"></div>
+                <div class="terminal-dot"></div>
+                <div class="terminal-dot"></div>
+              </div>
+              <span>alerrandro@terminal:~</span>
+            </div>
+            <div class="terminal-body">
+              <span class="t-line"><span class="t-prompt">$</span> <span class="t-cmd">whoami</span></span>
+              <span class="t-line t-out">alerrandro</span>
+              <span class="t-blank"></span>
+              <span class="t-line"><span class="t-prompt">$</span> <span class="t-cmd">cat profile.json</span></span>
+              <span class="t-line t-out">{</span>
+              <span class="t-line t-out">&nbsp;&nbsp;<span class="t-key">"role"</span>: <span class="t-val">"Dev &amp; Researcher"</span>,</span>
+              <span class="t-line t-out">&nbsp;&nbsp;<span class="t-key">"os"</span>: <span class="t-val">"Arch Linux"</span>,</span>
+              <span class="t-line t-out">&nbsp;&nbsp;<span class="t-key">"focus"</span>: [</span>
+              <span class="t-line t-out">&nbsp;&nbsp;&nbsp;&nbsp;<span class="t-val">"Linux"</span>, <span class="t-val">"Security"</span>,</span>
+              <span class="t-line t-out">&nbsp;&nbsp;&nbsp;&nbsp;<span class="t-val">"Hardware"</span>, <span class="t-val">"Embedded"</span></span>
+              <span class="t-line t-out">&nbsp;&nbsp;],</span>
+              <span class="t-line t-out">&nbsp;&nbsp;<span class="t-key">"telegram"</span>: <span class="t-val">"@alerrandro"</span>,</span>
+              <span class="t-line t-out">&nbsp;&nbsp;<span class="t-key">"status"</span>: <span class="t-val">"Aprendendo sempre"</span></span>
+              <span class="t-line t-out">}</span>
+              <span class="t-blank"></span>
+              <span class="t-line"><span class="t-prompt">$</span> <span class="t-cmd glitch-text">_</span><span style="animation:blink 1s step-end infinite;color:var(--green);">|</span></span>
+            </div>
+            <div class="terminal-scanline"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURED POST -->
+    <section class="section-padding">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">Publicacoes</div>
+          <h2 class="section-title">Artigo em <span class="accent">Destaque</span></h2>
+          <div class="section-line"></div>
+        </div>
+        <div id="featured-post"></div>
+
+        <div class="divider">
+          <div class="divider-line"></div>
+          <span class="divider-text">Recentes</span>
+          <div class="divider-line"></div>
+        </div>
+
+        <div class="posts-grid" id="recent-posts"></div>
+
+        <div style="text-align:center;margin-top:40px;">
+          <a href="blog.html" class="btn btn-secondary">Ver todos os artigos</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS PREVIEW -->
+    <section class="section-padding" style="background:rgba(0,255,65,0.01);border-top:1px solid var(--border-green);border-bottom:1px solid var(--border-green);">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">Repositorios</div>
+          <h2 class="section-title">Projetos <span class="accent">Recentes</span></h2>
+          <div class="section-line"></div>
+          <p class="section-meta">$ ls -la ~/projects/ | sort -k6,7</p>
+        </div>
+        <div class="projects-grid" id="home-projects"></div>
+        <div style="text-align:center;margin-top:40px;">
+          <a href="projetos.html" class="btn btn-primary">Ver todos os projetos</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section-padding">
+      <div class="container">
+        <div style="border:1px solid var(--border-cyan);padding:48px;text-align:center;background:var(--bg-card);position:relative;overflow:hidden;">
+          <div style="position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,var(--cyan),transparent);"></div>
+          <div class="section-tag" style="justify-content:center;margin-bottom:16px;">Contato</div>
+          <h2 class="section-title" style="margin-bottom:16px;">Vamos <span class="accent" style="color:var(--cyan);text-shadow:var(--glow-cyan);">Conversar</span></h2>
+          <p style="max-width:500px;margin:0 auto 32px;font-size:1rem;color:var(--text-muted);">
+            Interessado em colaborar, discutir tecnologia ou apenas trocar ideias sobre Linux e seguranca?
+          </p>
+          <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;">
+            <a href="contato.html" class="btn btn-secondary">Entrar em contato</a>
+            <a href="https://t.me/alerrandro" target="_blank" rel="noopener" class="btn btn-ghost">Telegram</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <div id="site-footer"></div>
+
+  <script src="assets/js/components.js"></script>
+  <script src="assets/js/matrix.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/posts.js"></script>
+  <script src="assets/js/projects.js"></script>
+</body>
+</html>

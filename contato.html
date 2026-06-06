@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contato - Alerrandro. Email, Telegram e GitHub.">
+  <meta name="author" content="Alerrandro">
+  <meta name="theme-color" content="#050505">
+  <title>Contato | Alerrandro</title>
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' fill='%23050505'/><text y='24' x='4' font-size='22' fill='%2300ff41' font-family='monospace'>_</text></svg>">
+</head>
+<body>
+  <canvas id="matrix-canvas"></canvas>
+  <div id="site-nav"></div>
+  <div id="site-hud"></div>
+
+  <div class="site-wrapper">
+
+    <div class="page-hero">
+      <div class="container">
+        <div class="page-hero-label animate-in">$ ssh alerrandro@contato</div>
+        <h1 class="page-hero-title animate-in delay-1">
+          <span class="accent">Contato</span>
+        </h1>
+        <p class="page-hero-desc animate-in delay-2">
+          Disponivel para colaboracoes, discussoes tecnicas ou apenas para trocar ideias sobre tecnologia.
+          O canal mais rapido e o Telegram.
+        </p>
+      </div>
+    </div>
+
+    <section class="section-padding">
+      <div class="container">
+        <div class="contact-grid">
+
+          <!-- CONTACT INFO -->
+          <div class="animate-in">
+            <div class="section-header" style="margin-bottom:32px;">
+              <div class="section-tag">Canais</div>
+              <h2 class="section-title">Como <span class="accent">Encontrar</span></h2>
+              <div class="section-line"></div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon">[M]</div>
+              <div>
+                <div class="contact-label">Email</div>
+                <div class="contact-value">
+                  <a href="mailto:alerrandrimiguelale@gmail.com">alerrandrimiguelale@gmail.com</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon">[T]</div>
+              <div>
+                <div class="contact-label">Telegram</div>
+                <div class="contact-value">
+                  <a href="https://t.me/alerrandro" target="_blank" rel="noopener">@alerrandro</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon">[G]</div>
+              <div>
+                <div class="contact-label">GitHub</div>
+                <div class="contact-value">
+                  <a href="https://github.com/alerrandro" target="_blank" rel="noopener">github.com/alerrandro</a>
+                </div>
+              </div>
+            </div>
+
+            <div style="margin-top:32px;border:1px solid var(--border-green);padding:24px;background:var(--bg-card);">
+              <div style="font-family:var(--font-mono);font-size:0.65rem;color:var(--cyan);letter-spacing:0.12em;text-transform:uppercase;margin-bottom:12px;">
+                // Tempo de resposta
+              </div>
+              <div style="font-family:var(--font-mono);font-size:0.78rem;color:var(--text-secondary);line-height:2;">
+                <span style="color:var(--green);">Telegram</span> &nbsp;&nbsp;&nbsp;&nbsp;Mais rapido (horas)<br>
+                <span style="color:var(--green);">Email</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1-3 dias uteis<br>
+                <span style="color:var(--green);">GitHub</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Issues e PRs aceitos
+              </div>
+            </div>
+
+            <div style="margin-top:20px;font-family:var(--font-mono);font-size:0.68rem;color:var(--text-muted);line-height:1.8;letter-spacing:0.05em;">
+              // Temas de interesse para discussao:<br>
+              <span style="color:var(--green);">></span> Linux, customizacao e sysadmin<br>
+              <span style="color:var(--green);">></span> Seguranca e CTF<br>
+              <span style="color:var(--green);">></span> Hardware e eletronica<br>
+              <span style="color:var(--green);">></span> SDR e radiofrequencia<br>
+              <span style="color:var(--green);">></span> Projetos open source
+            </div>
+          </div>
+
+          <!-- FORM -->
+          <div class="animate-in delay-2">
+            <div class="contact-form">
+              <div style="font-family:var(--font-mono);font-size:0.7rem;color:var(--cyan);letter-spacing:0.12em;text-transform:uppercase;margin-bottom:24px;">
+                // Formulario de Contato
+              </div>
+              <div style="font-family:var(--font-mono);font-size:0.65rem;color:var(--text-muted);margin-bottom:24px;padding:12px;border:1px solid #1a1a1a;background:rgba(255,170,0,0.03);border-left:2px solid rgba(255,170,0,0.4);">
+                AVISO: Este e um formulario visual demonstrativo.<br>
+                Para contato real, utilize email ou Telegram.
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label" for="name">Nome</label>
+                  <input type="text" id="name" class="form-input" placeholder="seu_nome">
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="email">Email</label>
+                  <input type="email" id="email" class="form-input" placeholder="seu@email.com">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="subject">Assunto</label>
+                <input type="text" id="subject" class="form-input" placeholder="Colaboracao / Duvida / Projeto">
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="message">Mensagem</label>
+                <textarea id="message" class="form-textarea" placeholder="Descreva sua mensagem..."></textarea>
+              </div>
+
+              <button type="button" class="btn btn-primary" onclick="handleFormSubmit()" style="width:100%;justify-content:center;">
+                Enviar Mensagem
+              </button>
+
+              <p class="form-note">
+                // Para mensagens urgentes ou colaboracoes, prefira o Telegram: @alerrandro
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <div id="site-footer"></div>
+
+  <script src="assets/js/components.js"></script>
+  <script src="assets/js/matrix.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script>
+    function handleFormSubmit() {
+      const btn = document.querySelector('.contact-form .btn');
+      const name = document.getElementById('name').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const message = document.getElementById('message').value.trim();
+
+      if (!name || !email || !message) {
+        btn.textContent = 'Preencha todos os campos';
+        btn.style.borderColor = 'rgba(255,170,0,0.5)';
+        btn.style.color = 'rgba(255,170,0,0.9)';
+        setTimeout(() => {
+          btn.textContent = 'Enviar Mensagem';
+          btn.style.borderColor = '';
+          btn.style.color = '';
+        }, 2500);
+        return;
+      }
+
+      btn.textContent = 'Redirecionando para Email...';
+      const subject = document.getElementById('subject').value.trim() || 'Contato via Blog';
+      const body = `Nome: ${name}\nEmail: ${email}\n\n${message}`;
+      window.location.href = `mailto:alerrandrimiguelale@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+
+      setTimeout(() => {
+        btn.textContent = '[Mensagem Preparada]';
+      }, 1000);
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sobre Alerrandro - desenvolvedor, entusiasta de Linux, seguranca e hardware.">
+  <meta name="author" content="Alerrandro">
+  <meta name="theme-color" content="#050505">
+  <title>Sobre | Alerrandro</title>
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' fill='%23050505'/><text y='24' x='4' font-size='22' fill='%2300ff41' font-family='monospace'>_</text></svg>">
+</head>
+<body>
+  <canvas id="matrix-canvas"></canvas>
+  <div id="site-nav"></div>
+  <div id="site-hud"></div>
+
+  <div class="site-wrapper">
+
+    <div class="page-hero">
+      <div class="container">
+        <div class="page-hero-label animate-in">$ cat /etc/profile.d/alerrandro.sh</div>
+        <h1 class="page-hero-title animate-in delay-1">
+          Sobre <span class="accent">Mim</span>
+        </h1>
+        <p class="page-hero-desc animate-in delay-2">
+          Um pouco sobre quem eu sou, o que me move e as tecnologias que fazem parte do meu dia a dia.
+        </p>
+      </div>
+    </div>
+
+    <section class="section-padding">
+      <div class="container">
+        <div class="about-grid">
+
+          <!-- SIDEBAR -->
+          <div class="about-sidebar animate-in">
+            <div class="about-profile">
+              <div class="about-avatar">
+                <span class="avatar-placeholder">[~]</span>
+              </div>
+              <div class="about-profile-name">Alerrandro</div>
+              <div class="about-profile-role">$ whoami --verbose</div>
+              <div style="font-family:var(--font-mono);font-size:0.72rem;color:var(--text-muted);line-height:1.8;margin-top:8px;">
+                <span style="color:var(--green);">OS:</span> Arch Linux<br>
+                <span style="color:var(--green);">Shell:</span> ZSH + Oh My Zsh<br>
+                <span style="color:var(--green);">Editor:</span> Neovim<br>
+                <span style="color:var(--green);">WM:</span> i3wm / Hyprland<br>
+                <span style="color:var(--green);">Terminal:</span> Alacritty<br>
+                <span style="color:var(--green);">Arch:</span> x86_64 / ARM
+              </div>
+              <div class="about-contacts">
+                <div class="about-contact-item">
+                  <span class="contact-label">email</span>
+                  <a href="mailto:alerrandrimiguelale@gmail.com" style="color:inherit;font-size:0.7rem;word-break:break-all;">alerrandrimiguelale@gmail.com</a>
+                </div>
+                <div class="about-contact-item">
+                  <span class="contact-label">github</span>
+                  <a href="https://github.com/alerrandro" target="_blank" rel="noopener" style="color:inherit;">github.com/alerrandro</a>
+                </div>
+                <div class="about-contact-item">
+                  <span class="contact-label">telegram</span>
+                  <a href="https://t.me/alerrandro" target="_blank" rel="noopener" style="color:inherit;">@alerrandro</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- CONTENT -->
+          <div class="about-content">
+
+            <div class="about-bio animate-in delay-1">
+              <h3>Quem Sou</h3>
+              <p>
+                Desenvolvedor e pesquisador com interesse genuino em entender como os sistemas funcionam por dentro.
+                Minha trajetoria em tecnologia comecou cedo, explorando sistemas Linux e gradualmente migrando para
+                areas mais especializadas como seguranca ofensiva, hardware e sistemas embarcados.
+              </p>
+              <p>
+                Acredito que o conhecimento profundo de baixo nivel &mdash; assembly, syscalls, protocolos de rede,
+                firmware &mdash; e o que diferencia um profissional tecnico excepcional. Por isso busco sempre
+                entender nao apenas como usar as ferramentas, mas como elas foram construidas.
+              </p>
+              <p>
+                Este blog e o resultado desse processo: um lugar para documentar o que aprendo, compartilhar
+                descobertas e construir um repositorio tecnico publico que possa ser util para outros.
+              </p>
+            </div>
+
+            <div class="about-bio animate-in delay-2">
+              <h3>Interesses</h3>
+              <p>
+                Linux desde o kernel ate o desktop. Seguranca da informacao em sua dimensao ofensiva e defensiva.
+                Hardware, eletronica e sistemas embarcados. Redes, protocolos e engenharia reversa.
+                Programacao de baixo nivel, scripting e automacao. Radio definido por software (SDR).
+                Open source, privacidade e soberania tecnologica.
+              </p>
+            </div>
+
+            <div class="skills-grid animate-in delay-3">
+              <div class="skill-group">
+                <div class="skill-group-title">// Linux &amp; Sistemas</div>
+                <div class="skill-item">Arch Linux / Debian / RHEL</div>
+                <div class="skill-item">Kernel &amp; Drivers</div>
+                <div class="skill-item">Systemd / Cgroups</div>
+                <div class="skill-item">Shell Scripting (Bash/ZSH)</div>
+                <div class="skill-item">Containers &amp; Namespaces</div>
+                <div class="skill-item">LVM / BTRFS / ZFS</div>
+              </div>
+              <div class="skill-group">
+                <div class="skill-group-title">// Seguranca</div>
+                <div class="skill-item">Pentest &amp; CTF</div>
+                <div class="skill-item">Engenharia Reversa</div>
+                <div class="skill-item">Analise de Malware</div>
+                <div class="skill-item">Redes &amp; Protocolos</div>
+                <div class="skill-item">Criptografia Aplicada</div>
+                <div class="skill-item">OSINT</div>
+              </div>
+              <div class="skill-group">
+                <div class="skill-group-title">// Desenvolvimento</div>
+                <div class="skill-item">Python / C / C++</div>
+                <div class="skill-item">Assembly x86-64 / ARM</div>
+                <div class="skill-item">Rust (aprendendo)</div>
+                <div class="skill-item">Git &amp; CI/CD</div>
+                <div class="skill-item">APIs REST &amp; gRPC</div>
+                <div class="skill-item">SQL &amp; NoSQL</div>
+              </div>
+              <div class="skill-group">
+                <div class="skill-group-title">// Hardware</div>
+                <div class="skill-item">ESP32 / Arduino / RPi</div>
+                <div class="skill-item">Eletronica Basica</div>
+                <div class="skill-item">RTL-SDR &amp; RF</div>
+                <div class="skill-item">PCB Design</div>
+                <div class="skill-item">JTAG / UART / SPI</div>
+                <div class="skill-item">FreeRTOS / ESP-IDF</div>
+              </div>
+            </div>
+
+            <div class="about-bio animate-in delay-4" style="margin-top:40px;">
+              <h3>Setup Atual</h3>
+              <div style="border:1px solid var(--border-green);background:var(--bg-card);padding:20px;font-family:var(--font-mono);font-size:0.78rem;line-height:2;">
+                <span style="color:var(--green);">HOST</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Custom Build x86_64<br>
+                <span style="color:var(--green);">OS</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Arch Linux (rolling release)<br>
+                <span style="color:var(--green);">KERNEL</span> &nbsp;&nbsp;Linux 6.x (hardened)<br>
+                <span style="color:var(--green);">WM</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;i3wm / Hyprland (Wayland)<br>
+                <span style="color:var(--green);">TERM</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Alacritty + tmux<br>
+                <span style="color:var(--green);">EDITOR</span> &nbsp;&nbsp;Neovim (LazyVim)<br>
+                <span style="color:var(--green);">BROWSER</span> &nbsp;Firefox (hardened)<br>
+                <span style="color:var(--green);">VPN</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;WireGuard (self-hosted)<br>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <div id="site-footer"></div>
+
+  <script src="assets/js/components.js"></script>
+  <script src="assets/js/matrix.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
